@@ -10,9 +10,21 @@ namespace Homework_1._2
 {
     class Sprint
     {
-        string[] UserStories = new string[] {UserStory.U1, };
-        public static void Main(string[] args)
+        public int count = 0;
+        UserStory[] UserStories = new UserStory[10];
+        public void AddUserStory(UserStory userstory)
         {
+            UserStories[count] = userstory;
+            count += 1;
+        }
+        public int TotalHours()
+        {
+            int sum = 0;
+            for (int i = 0 ; i < 10;)
+            {
+                sum += UserStories[i].hours;
+            }
+            return sum;
         }
     }
 }

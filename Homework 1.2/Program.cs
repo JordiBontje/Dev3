@@ -8,7 +8,7 @@ namespace Homework_1._2
 {
     class UserStory
     {
-        private int hours { get; set;}
+        public int hours { get { return this.hours; } set { this.hours = Math.Abs(value); }}
         private string description { get; set;}
 
         public UserStory(int hours, string description)
@@ -17,17 +17,9 @@ namespace Homework_1._2
             this.description = description;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return "UserStory:" + this.description + "will take" + this.hours;
-        }
-
-
-        static void Main(string[] args)
-        {
-            UserStory U1 = new UserStory(5, "lekker leuk");
-            UserStory U2 = new UserStory(7, "HEHE EKSDIE");
-            UserStory U3 = new UserStory(9, "Fijn");
         }
     }
 }
