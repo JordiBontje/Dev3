@@ -8,7 +8,7 @@ namespace Homework_1._2
 {
     class UserStory
     {
-        public int hours { get { return this.hours; } set { this.hours = Math.Abs(value); }}
+        public int hours { get;  set; }
         private string description { get; set;}
 
         public UserStory(int hours, string description)

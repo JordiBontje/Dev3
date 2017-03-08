@@ -13,6 +13,15 @@ namespace Homework_1._2
             UserStory U1 = new UserStory(5, "lekker leuk");
             UserStory U2 = new UserStory(7, "HEHE EKSDIE");
             UserStory U3 = new UserStory(9, "Fijn");
+
+            Sprint sprint = new Sprint();
+
+            sprint.AddUserStory(U1);
+            sprint.AddUserStory(U2);
+            sprint.AddUserStory(U3);
+            
+            Console.WriteLine(sprint.TotalHours());
+            Console.ReadLine();
         }
     }
 }

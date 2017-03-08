@@ -20,7 +20,7 @@ namespace Homework_1._2
         public int TotalHours()
         {
             int sum = 0;
-            for (int i = 0 ; i < 10;)
+            for (int i = 0 ; i < count; i++)
             {
                 sum += UserStories[i].hours;
             }
