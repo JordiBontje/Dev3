@@ -11,10 +11,10 @@ namespace Homework_1._2
     class Sprint
     {
         public int count = 0;
-        UserStory[] UserStories = new UserStory[10];
+        List<UserStory> UserStories = new List<UserStory>();
         public void AddUserStory(UserStory userstory)
         {
-            UserStories[count] = userstory;
+            UserStories.Add(userstory);
             count += 1;
         }
         public int TotalHours()
